@@ -148,7 +148,7 @@ func (bot *Bot) handleSubscribeCommand(chatId int64, user *units.User) {
 	}
 
 	msg := tgbotapi.NewMessage(chatId, `Сповіщення увімкнено.
-Тепер на початку та за 2 хв до початку уроку ти будеш отримувати сповіщення.
+Тепер на початку та за 5 хв до початку уроку ти будеш отримувати сповіщення.
 Аби вимкунити сповіщення скористайся /unsubscribe командою.`)
 	msg.ParseMode = "html"
 	bot.BotAPI.Send(msg)

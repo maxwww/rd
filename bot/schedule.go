@@ -62,13 +62,13 @@ var YaDoslidzhuiuSvit = Subject{
 }
 
 var DyzainITekhnolohii = Subject{
-	Name:      "Я досліджую світ",
-	ShortName: "ЯДС",
+	Name:      "Дизайн і технології",
+	ShortName: "Диз. і технології",
 }
 
 var IndyvidualneZaniattia = Subject{
-	Name:      "Дизайн і технології",
-	ShortName: "Диз. і технології",
+	Name:      "Індивідуальне заняття",
+	ShortName: "Індивідуальне заняття",
 }
 
 var Monday = Day{
@@ -127,114 +127,58 @@ var Friday = Day{
 	},
 }
 
+var Saturday = Day{
+	Name: "Субота",
+	Subjects: [][]Subject{
+		{YaDoslidzhuiuSvit},
+		{AnhliiskaMova},
+		{UkrainskaMova, LiteraturneChytannia},
+		{AnhliiskaMova},
+		{IndyvidualneZaniattia},
+	},
+}
+
 var Timetable = map[int]Day{
 	1: Monday,
 	2: Tuesday,
 	3: Wednesday,
 	4: Thursday,
 	5: Friday,
+	6: Saturday,
 }
 
 var Bells = []SchoolBell{
 	{
 		Position: 1,
-		Start:    "15:30",
-		End:      "15:35",
+		Start:    "8:00",
+		End:      "8:40",
 	},
 	{
 		Position: 2,
-		Start:    "15:40",
-		End:      "15:45",
+		Start:    "8:55",
+		End:      "9:35",
 	},
 	{
 		Position: 3,
-		Start:    "15:50",
-		End:      "15:55",
+		Start:    "9:50",
+		End:      "10:30",
 	},
 	{
 		Position: 4,
-		Start:    "16:00",
-		End:      "16:05",
+		Start:    "10:55",
+		End:      "11:35",
 	},
 	{
 		Position: 5,
-		Start:    "16:10",
-		End:      "16:15",
+		Start:    "12:00",
+		End:      "12:40",
 	},
 	{
 		Position: 6,
-		Start:    "16:20",
-		End:      "16:25",
+		Start:    "12:55",
+		End:      "13:35",
 	},
 }
-
-//
-//var Bells = []SchoolBell{
-//	{
-//		Position: 1,
-//		Start:    "16:00",
-//		End:      "16:40",
-//	},
-//	{
-//		Position: 2,
-//		Start:    "16:55",
-//		End:      "17:35",
-//	},
-//	{
-//		Position: 3,
-//		Start:    "17:50",
-//		End:      "18:30",
-//	},
-//	{
-//		Position: 4,
-//		Start:    "18:55",
-//		End:      "19:35",
-//	},
-//	{
-//		Position: 5,
-//		Start:    "20:00",
-//		End:      "20:40",
-//	},
-//	{
-//		Position: 6,
-//		Start:    "20:55",
-//		End:      "21:35",
-//	},
-//}
-
-//
-//var Bells = []SchoolBell{
-//	{
-//		Position: 1,
-//		Start:    "8:00",
-//		End:      "8:40",
-//	},
-//	{
-//		Position: 2,
-//		Start:    "8:55",
-//		End:      "9:35",
-//	},
-//	{
-//		Position: 3,
-//		Start:    "9:50",
-//		End:      "10:30",
-//	},
-//	{
-//		Position: 4,
-//		Start:    "10:55",
-//		End:      "11:35",
-//	},
-//	{
-//		Position: 5,
-//		Start:    "12:00",
-//		End:      "12:40",
-//	},
-//	{
-//		Position: 6,
-//		Start:    "12:55",
-//		End:      "13:35",
-//	},
-//}
 
 var DayNames = map[int]string{
 	0: "неділя",

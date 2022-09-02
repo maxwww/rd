@@ -33,13 +33,13 @@ func (bot *Bot) RegisterCrons() {
 				panic(err)
 			}
 
-			minutes -= 2
+			minutes -= 5
 			if minutes < 0 {
 				minutes = 60 + minutes
 				hours -= 1
 			}
 
-			message = fmt.Sprintf(`Урок "%s" розпочнеться через 2 хв.`, strings.Join(subjectNames, "/"))
+			message = fmt.Sprintf(`Урок "%s" розпочнеться через 5 хв.`, strings.Join(subjectNames, "/"))
 			_, err = c.AddFunc(fmt.Sprintf("%d %d * * %d", minutes, hours, day), bot.buildCronFunction(message))
 
 			if err != nil {
