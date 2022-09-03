@@ -127,24 +127,12 @@ var Friday = Day{
 	},
 }
 
-var Saturday = Day{
-	Name: "Субота",
-	Subjects: [][]Subject{
-		{YaDoslidzhuiuSvit},
-		{AnhliiskaMova},
-		{UkrainskaMova, LiteraturneChytannia},
-		{AnhliiskaMova},
-		{IndyvidualneZaniattia},
-	},
-}
-
 var Timetable = map[int]Day{
 	1: Monday,
 	2: Tuesday,
 	3: Wednesday,
 	4: Thursday,
 	5: Friday,
-	6: Saturday,
 }
 
 var Bells = []SchoolBell{

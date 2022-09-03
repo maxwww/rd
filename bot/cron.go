@@ -21,26 +21,19 @@ func (bot *Bot) RegisterCrons() {
 			parts := strings.Split(Bells[number].Start, ":")
 			hours, _ := strconv.Atoi(parts[0])
 			minutes, _ := strconv.Atoi(parts[1])
-
-			var subjectNames []string
-			for _, s := range subject {
-				subjectNames = append(subjectNames, s.ShortName)
-			}
-			message := fmt.Sprintf(`Урок "%s" розпочався.`, strings.Join(subjectNames, "/"))
-			_, err := c.AddFunc(fmt.Sprintf("%d %d * * %d", minutes, hours, day), bot.buildCronFunction(message))
-
-			if err != nil {
-				panic(err)
-			}
-
 			minutes -= 5
 			if minutes < 0 {
 				minutes = 60 + minutes
 				hours -= 1
 			}
 
-			message = fmt.Sprintf(`Урок "%s" розпочнеться через 5 хв.`, strings.Join(subjectNames, "/"))
-			_, err = c.AddFunc(fmt.Sprintf("%d %d * * %d", minutes, hours, day), bot.buildCronFunction(message))
+			var subjectNames []string
+			for _, s := range subject {
+				subjectNames = append(subjectNames, s.ShortName)
+			}
+
+			message := fmt.Sprintf(`Урок "%s" розпочнеться через 5 хв.`, strings.Join(subjectNames, "/"))
+			_, err := c.AddFunc(fmt.Sprintf("%d %d * * %d", minutes, hours, day), bot.buildCronFunction(message))
 
 			if err != nil {
 				panic(err)
