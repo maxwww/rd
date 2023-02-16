@@ -108,9 +108,9 @@ var Thursday = Day{
 	Name: "Четвер",
 	Subjects: [][]Subject{
 		{YaDoslidzhuiuSvit},
-		{AnhliiskaMova},
-		{Matematyka},
 		{UkrainskaMova},
+		{Matematyka},
+		{AnhliiskaMova},
 		{DyzainITekhnolohii},
 		{IndyvidualneZaniattia},
 	},
