@@ -22,18 +22,6 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
 
-  adminer:
-    image: adminer
-    container_name: rd_bot_adminer
-    restart: always
-    depends_on:
-      - db
-    links:
-      - db
-    ports:
-      - ${ADMINER_PORT}:8080
-
-
 volumes:
   db:
     driver: local

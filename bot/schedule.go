@@ -71,59 +71,102 @@ var IndyvidualneZaniattia = Subject{
 	ShortName: "Індивідуальне заняття",
 }
 
+var Etyka = Subject{
+	Name:      "Етика",
+	ShortName: "Етика",
+}
+
+var PiznaiemoPryrodu = Subject{
+	Name:      "Пізнаємо природу",
+	ShortName: "Пізнаємо природу",
+}
+
+var Tekhnolohii = Subject{
+	Name:      "Технології",
+	ShortName: "Технології",
+}
+
+var UkrainskaLiteratura = Subject{
+	Name:      "Українська література",
+	ShortName: "Укр. література",
+}
+
+var Mystetstvo = Subject{
+	Name:      "Ммистецтво",
+	ShortName: "Мистецтво",
+}
+
+var Istoriia = Subject{
+	Name:      "Історія",
+	ShortName: "Історія",
+}
+
+var Zdorovia = Subject{
+	Name:      "Здоров'я",
+	ShortName: "Здоров'я",
+}
+
+var ZarubizhnaLiteratura = Subject{
+	Name:      "Зарубіжна література",
+	ShortName: "Зарубіжна література",
+}
+
 var Monday = Day{
 	Name: "Понеділок",
 	Subjects: [][]Subject{
-		{LiteraturneChytannia},
+		{FizychneVykhovannia},
+		{Etyka},
 		{Matematyka},
 		{UkrainskaMova},
-		{Informatyka},
-		{MuzychneMystetstvo},
+		{AnhliiskaMova},
+		{PiznaiemoPryrodu},
 	},
 }
 
 var Tuesday = Day{
 	Name: "Вівторок",
 	Subjects: [][]Subject{
-		{LiteraturneChytannia},
 		{Matematyka},
+		{Tekhnolohii},
+		{UkrainskaMova},
+		{Informatyka},
 		{AnhliiskaMova},
-		{ObrazotvorcheMystetstvo},
-		{FizychneVykhovannia},
+		{UkrainskaLiteratura},
 	},
 }
 
 var Wednesday = Day{
 	Name: "Середа",
 	Subjects: [][]Subject{
-		{YaDoslidzhuiuSvit},
+		{FizychneVykhovannia},
+		{Tekhnolohii},
+		{AnhliiskaMova},
 		{Matematyka},
 		{UkrainskaMova},
-		{LiteraturneChytannia},
-		{FizychneVykhovannia},
 	},
 }
 
 var Thursday = Day{
 	Name: "Четвер",
 	Subjects: [][]Subject{
-		{YaDoslidzhuiuSvit},
-		{UkrainskaMova},
+		{Mystetstvo},
+		{Informatyka},
 		{Matematyka},
-		{AnhliiskaMova},
-		{DyzainITekhnolohii},
-		{IndyvidualneZaniattia},
+		{UkrainskaMova},
+		{Istoriia},
+		{Zdorovia},
 	},
 }
 
 var Friday = Day{
 	Name: "П'ятниця",
 	Subjects: [][]Subject{
-		{YaDoslidzhuiuSvit},
-		{Matematyka},
-		{UkrainskaMova, LiteraturneChytannia},
 		{AnhliiskaMova},
 		{FizychneVykhovannia},
+		{ZarubizhnaLiteratura},
+		{Matematyka},
+		{UkrainskaLiteratura},
+		{PiznaiemoPryrodu},
 	},
 }
 
@@ -139,32 +182,32 @@ var Bells = []SchoolBell{
 	{
 		Position: 1,
 		Start:    "8:00",
-		End:      "8:40",
+		End:      "8:45",
 	},
 	{
 		Position: 2,
 		Start:    "8:55",
-		End:      "9:35",
+		End:      "9:40",
 	},
 	{
 		Position: 3,
-		Start:    "9:50",
-		End:      "10:30",
+		Start:    "10:10",
+		End:      "10:55",
 	},
 	{
 		Position: 4,
-		Start:    "10:55",
-		End:      "11:35",
+		Start:    "11:05",
+		End:      "11:50",
 	},
 	{
 		Position: 5,
 		Start:    "12:00",
-		End:      "12:40",
+		End:      "12:45",
 	},
 	{
 		Position: 6,
 		Start:    "12:55",
-		End:      "13:35",
+		End:      "13:40",
 	},
 }
 
