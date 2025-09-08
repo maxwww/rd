@@ -21,6 +21,11 @@ var LiteraturneChytannia = Subject{
 	ShortName: "Літ. читання",
 }
 
+var Lesson = Subject{
+	Name:      "Урок",
+	ShortName: "Урок",
+}
+
 var Matematyka = Subject{
 	Name:      "Математика",
 	ShortName: "Математика",
@@ -114,59 +119,65 @@ var ZarubizhnaLiteratura = Subject{
 var Monday = Day{
 	Name: "Понеділок",
 	Subjects: [][]Subject{
-		{FizychneVykhovannia},
-		{Etyka},
-		{Matematyka},
-		{UkrainskaMova},
-		{AnhliiskaMova},
-		{PiznaiemoPryrodu},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
 	},
 }
 
 var Tuesday = Day{
 	Name: "Вівторок",
 	Subjects: [][]Subject{
-		{Matematyka},
-		{Tekhnolohii},
-		{UkrainskaMova},
-		{Informatyka},
-		{AnhliiskaMova},
-		{UkrainskaLiteratura},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
 	},
 }
 
 var Wednesday = Day{
 	Name: "Середа",
 	Subjects: [][]Subject{
-		{FizychneVykhovannia},
-		{Tekhnolohii},
-		{AnhliiskaMova},
-		{Matematyka},
-		{UkrainskaMova},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
 	},
 }
 
 var Thursday = Day{
 	Name: "Четвер",
 	Subjects: [][]Subject{
-		{Mystetstvo},
-		{Informatyka},
-		{Matematyka},
-		{UkrainskaMova},
-		{Istoriia},
-		{Zdorovia},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
 	},
 }
 
 var Friday = Day{
 	Name: "П'ятниця",
 	Subjects: [][]Subject{
-		{AnhliiskaMova},
-		{FizychneVykhovannia},
-		{ZarubizhnaLiteratura},
-		{Matematyka},
-		{UkrainskaLiteratura},
-		{PiznaiemoPryrodu},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
+		{Lesson},
 	},
 }
 
@@ -181,33 +192,38 @@ var Timetable = map[int]Day{
 var Bells = []SchoolBell{
 	{
 		Position: 1,
-		Start:    "8:00",
-		End:      "8:45",
+		Start:    "8:30",
+		End:      "9:15",
 	},
 	{
 		Position: 2,
-		Start:    "8:55",
-		End:      "9:40",
+		Start:    "9:25",
+		End:      "10:10",
 	},
 	{
 		Position: 3,
-		Start:    "10:10",
-		End:      "10:55",
+		Start:    "10:25",
+		End:      "11:10",
 	},
 	{
 		Position: 4,
-		Start:    "11:05",
-		End:      "11:50",
+		Start:    "11:20",
+		End:      "12:05",
 	},
 	{
 		Position: 5,
-		Start:    "12:00",
-		End:      "12:45",
+		Start:    "12:25",
+		End:      "13:10",
 	},
 	{
 		Position: 6,
-		Start:    "12:55",
-		End:      "13:40",
+		Start:    "13:20",
+		End:      "14:05",
+	},
+	{
+		Position: 7,
+		Start:    "14:15",
+		End:      "15:00",
 	},
 }
 
