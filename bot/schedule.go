@@ -26,9 +26,14 @@ var Lesson = Subject{
 	ShortName: "Урок",
 }
 
-var Matematyka = Subject{
-	Name:      "Математика",
-	ShortName: "Математика",
+var FizychnaKultura = Subject{
+	Name:      "Фізична культура",
+	ShortName: "Фіз. культура",
+}
+
+var IstoriiaUkrainy = Subject{
+	Name:      "Історія України",
+	ShortName: "Іст. Укр.",
 }
 
 var UkrainskaMova = Subject{
@@ -36,59 +41,9 @@ var UkrainskaMova = Subject{
 	ShortName: "Укр. мова",
 }
 
-var Informatyka = Subject{
-	Name:      "Інформатика",
-	ShortName: "Інформатика",
-}
-
-var MuzychneMystetstvo = Subject{
-	Name:      "Музичне мистецтво",
-	ShortName: "Муз. мистецтво",
-}
-
 var AnhliiskaMova = Subject{
 	Name:      "Англійська мова",
 	ShortName: "Англ. мова",
-}
-
-var ObrazotvorcheMystetstvo = Subject{
-	Name:      "Образотворче мистецтво",
-	ShortName: "Обр. мистецтво",
-}
-
-var FizychneVykhovannia = Subject{
-	Name:      "Фізичне виховання",
-	ShortName: "Фіз. виховання",
-}
-
-var YaDoslidzhuiuSvit = Subject{
-	Name:      "Я досліджую світ",
-	ShortName: "ЯДС",
-}
-
-var DyzainITekhnolohii = Subject{
-	Name:      "Дизайн і технології",
-	ShortName: "Диз. і технології",
-}
-
-var IndyvidualneZaniattia = Subject{
-	Name:      "Індивідуальне заняття",
-	ShortName: "Індивідуальне заняття",
-}
-
-var Etyka = Subject{
-	Name:      "Етика",
-	ShortName: "Етика",
-}
-
-var PiznaiemoPryrodu = Subject{
-	Name:      "Пізнаємо природу",
-	ShortName: "Пізнаємо природу",
-}
-
-var Tekhnolohii = Subject{
-	Name:      "Технології",
-	ShortName: "Технології",
 }
 
 var UkrainskaLiteratura = Subject{
@@ -96,19 +51,59 @@ var UkrainskaLiteratura = Subject{
 	ShortName: "Укр. література",
 }
 
+var Alhebra = Subject{
+	Name:      "Алгебра",
+	ShortName: "Алгебра",
+}
+
+var Heometriia = Subject{
+	Name:      "Геометрія",
+	ShortName: "Геометрія",
+}
+
+var Informatyka = Subject{
+	Name:      "Інформатика",
+	ShortName: "Інформатика",
+}
+
+var Biolohiia = Subject{
+	Name:      "Біологія",
+	ShortName: "Біологія",
+}
+
 var Mystetstvo = Subject{
-	Name:      "Ммистецтво",
+	Name:      "Мистецтво",
 	ShortName: "Мистецтво",
 }
 
-var Istoriia = Subject{
-	Name:      "Історія",
-	ShortName: "Історія",
+var Fizyka = Subject{
+	Name:      "Фізика",
+	ShortName: "Фізика",
 }
 
-var Zdorovia = Subject{
-	Name:      "Здоров'я",
-	ShortName: "Здоров'я",
+var Khimiia = Subject{
+	Name:      "Хімія",
+	ShortName: "Хімія",
+}
+
+var HromadianskaOsvita = Subject{
+	Name:      "Громадянська освіта",
+	ShortName: "Гром. освіта",
+}
+
+var Heohrafiia = Subject{
+	Name:      "Географія",
+	ShortName: "Географія",
+}
+
+var TrudoveNavchannia = Subject{
+	Name:      "Трудове навчання",
+	ShortName: "Трудове",
+}
+
+var VsesvitniaIstoriia = Subject{
+	Name:      "Всесвітня Історія",
+	ShortName: "Всесв. Іст.",
 }
 
 var ZarubizhnaLiteratura = Subject{
@@ -116,68 +111,72 @@ var ZarubizhnaLiteratura = Subject{
 	ShortName: "Зарубіжна література",
 }
 
+var ZdoroviaBezpekaTaDobrobut = Subject{
+	Name:      "Здоров'я, безпека та добробут",
+	ShortName: "ЗБД",
+}
+
 var Monday = Day{
 	Name: "Понеділок",
 	Subjects: [][]Subject{
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
+		{FizychnaKultura},
+		{IstoriiaUkrainy},
+		{AnhliiskaMova},
+		{UkrainskaMova},
+		{UkrainskaLiteratura},
+		{Alhebra},
+		{Informatyka},
 	},
 }
 
 var Tuesday = Day{
 	Name: "Вівторок",
 	Subjects: [][]Subject{
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
+		{Biolohiia},
+		{Mystetstvo},
+		{Fizyka},
+		{Heohrafiia},
+		{FizychnaKultura},
+		{Khimiia},
+		{HromadianskaOsvita},
 	},
 }
 
 var Wednesday = Day{
 	Name: "Середа",
 	Subjects: [][]Subject{
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
+		{AnhliiskaMova},
+		{UkrainskaMova},
+		{Alhebra},
+		{Heohrafiia},
+		{UkrainskaLiteratura},
+		{TrudoveNavchannia},
+		{Khimiia},
 	},
 }
 
 var Thursday = Day{
 	Name: "Четвер",
 	Subjects: [][]Subject{
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
+		{Fizyka},
+		{VsesvitniaIstoriia},
+		{AnhliiskaMova},
+		{ZarubizhnaLiteratura},
+		{UkrainskaMova},
+		{Heometriia},
 	},
 }
 
 var Friday = Day{
 	Name: "П'ятниця",
 	Subjects: [][]Subject{
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
-		{Lesson},
+		{ZarubizhnaLiteratura},
+		{AnhliiskaMova},
+		{Alhebra},
+		{UkrainskaMova},
+		{Heohrafiia},
+		{Biolohiia},
+		{ZdoroviaBezpekaTaDobrobut},
 	},
 }
 
