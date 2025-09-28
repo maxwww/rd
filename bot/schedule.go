@@ -135,7 +135,7 @@ var Tuesday = Day{
 		{Biolohiia},
 		{Mystetstvo},
 		{Fizyka},
-		{Heohrafiia},
+		{Heometriia},
 		{FizychnaKultura},
 		{Khimiia},
 		{HromadianskaOsvita},
@@ -164,6 +164,7 @@ var Thursday = Day{
 		{ZarubizhnaLiteratura},
 		{UkrainskaMova},
 		{Heometriia},
+		{FizychnaKultura},
 	},
 }
 
