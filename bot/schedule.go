@@ -202,28 +202,28 @@ var Bells = []SchoolBell{
 	},
 	{
 		Position: 3,
-		Start:    "10:25",
-		End:      "11:10",
+		Start:    "10:30",
+		End:      "11:15",
 	},
 	{
 		Position: 4,
-		Start:    "11:20",
-		End:      "12:05",
+		Start:    "11:40",
+		End:      "12:25",
 	},
 	{
 		Position: 5,
-		Start:    "12:25",
-		End:      "13:10",
+		Start:    "12:50",
+		End:      "13:35",
 	},
 	{
 		Position: 6,
-		Start:    "13:20",
-		End:      "14:05",
+		Start:    "13:45",
+		End:      "14:30",
 	},
 	{
 		Position: 7,
-		Start:    "14:15",
-		End:      "15:00",
+		Start:    "14:40",
+		End:      "15:25",
 	},
 }
 
